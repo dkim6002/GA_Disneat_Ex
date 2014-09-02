@@ -1,11 +1,11 @@
-class Restaurants < ApplicationController
+class RestaurantsController < ApplicationController
 
 	def index
-
+		@restaurants = Restaurant.all
 	end
 
 	def show
-
+		@restaurant = Restaurant.new
 	end
 
 	def create
